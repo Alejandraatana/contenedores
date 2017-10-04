@@ -7,11 +7,11 @@ Curso publico de Contendores
 * Concepto de Virtualización
 * Concepto de Contenedor
 * Tecnologías de contenedores
-** Systemd
-** Docker
+  * Systemd
+  * Docker
 * Micro Sistemas Operativos Especializados en contenedores
-** Proyecto Atomic
-** RancherOS
+  * Proyecto Atomic
+  * RancherOS
 * Orquestación
-** Kubernets
-** OpenShift
+  * Kubernets
+  * OpenShift
