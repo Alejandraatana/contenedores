@@ -1,6 +1,6 @@
 # systemd lightweight containers :octocat:
 
-systemd-nspawn lanza contenedores basados en espacio de usuario con fines depuracion y desarrollo (no apto para producción)
+systemd-nspawn lanza contenedores basados en espacio de usuario con fines depuración y desarrollo (no apto para producción)
 
 ```
 $ sudo dnf -y install systemd-container
