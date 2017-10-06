@@ -1,6 +1,6 @@
 # Definiciones
 
-## devOps
+## DevOps
 
 Es la integración de técnicas de automatización  al proceso de desarrollo ágil y la integración de las aplicaciones con la infraestructura existente, minimizando los tiempo de desarrollo e implantación de las aplicaciones.
 
