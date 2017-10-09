@@ -52,7 +52,7 @@ sudo docker run --name docker-nginx -d nginx
 ```
 sudo docker stop docker-nginx
 ```
-## borrar contenedor
+## Borrar contenedor
 ```
 sudo docker rm docker-nginx 
 ```
