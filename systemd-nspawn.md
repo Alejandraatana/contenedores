@@ -27,8 +27,15 @@ $ sudo debootstrap --arch=i386 testing ./debian-hamster
 $ sudo systemd-nspawn --directory=./debian-hamster passwd
 $ sudo systemd-nspawn --directory=./debian-hamster useradd soyunhamstercacheton
 $ sudo systemd-nspawn -D ./debian-hamster apt-get update
-$ sudo systemd-nspawn -D ./debian-hamster apt-get install ssh firefox
+$ sudo systemd-nspawn -D ./debian-hamster apt-get install ssh iceweasel
 # comentario -> WorkAround bug #20116
 $ sudo sudo umount ./debian-hamster/proc
-$ sudo systemd-nspawn -bD ./debian-hamster --bind ~/Downloads:/mnt:rbind 
+$ sudo systemd-nspawn -bD ./debian-hamster --bind ~/Downloads:/mnt:rbind
+```
+dentro del contenedor 
+
+```
+$ export DISPLAY=:0
+$ firefox
+
 ```
