@@ -80,3 +80,7 @@ $ sudo docker create busybox
 $ sudo docker exec <contenedor> COMANDO
 $ sudo docker exec hamster bash
 ```
+## Revisar bitacoras del contendor
+```bash
+$ sudo docker logs <contenedor>
+```
