@@ -11,6 +11,15 @@ los soportan (Linux/Windows/Mac OSX).
 ```
 $ sudo dnf install docker
 ```
+## Iniciar Docker Daemon
+```
+$ sudo systemctl start docker
+```
+## Habilitar Docker Daemon al arranque 
+```bash 
+$ sudo systemctl enable docker
+```
+
 ## docker hub 
 
 Podemos revisar [el docker hub.](https://hub.docker.com/explore/)
@@ -18,7 +27,7 @@ Podemos revisar [el docker hub.](https://hub.docker.com/explore/)
 ## Primer docker run
 
 ```
-$ sudo docker hello-world
+$ sudo docker run hello-world
 $ sudo docker run -i -t alpine echo 'Hola mundo'
 ```
 ## Listar imagenes
@@ -57,7 +66,17 @@ sudo docker stop docker-nginx
 sudo docker rm docker-nginx 
 ```
 ## Ligar directorio local y contendor
+```bash
+mkdir /tmp/html
+$ sudo docker run -name docker-nginx -p 80:80 -d -v /tmp/html:/usr/share/nginx/html nginx
 ```
-mkdir html
-$ sudo docker run -name docker-nginx -p 80:80 -d -v ./html:/usr/share/nginx/html nginx
+## Crear contenedor sin ejecutarlo
+```bash
+$ sudo docker create busybox
+```
+
+## Ejecutar Comandos dentro del contendor
+```bash
+$ sudo docker exec <contenedor> COMANDO
+$ sudo docker exec hamster bash
 ```
