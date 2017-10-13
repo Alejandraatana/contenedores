@@ -4,9 +4,9 @@ su comparticion.
 
 Ejemplos de registros son:
 
-https://registry.fedoraproject.org/
-https://registry.access.redhat.com/
-https://docker.io/
+* https://registry.fedoraproject.org/
+* https://registry.access.redhat.com/
+* https://docker.io/
 
 ## Exploracion
 
