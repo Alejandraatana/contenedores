@@ -76,7 +76,7 @@ ENV HOSTNAME "Hamster"
 
 ## Comando ADD y COPY
 
-* ADD copia el contenido de una URL fuente (local o remota) al destino dentro del contendor.
+* ADD copia el contenido de una URL fuente (local o remota) al destino dentro del contendor, ademas soporta descompresion.
 ```
 ADD <fuente>... <destino>
 ADD ["<fuente>",... "<destino>"]
