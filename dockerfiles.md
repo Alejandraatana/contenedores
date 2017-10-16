@@ -92,3 +92,22 @@ Configura el contenedor con una aplicacion para ejecutar un problema.
 ENTRYPOINT ["ejecutable", "param1", "param2"]
 ENTRYPOINT comando param1 param2
 ```
+En conjunto con `CMD` 
+```
+FROM busybox
+ENTRYPOINT ["/bin/bash", "-c"]
+CMD ["echo Hamster"]
+```
+## Comando WORKDIR
+Establece el directorio de trabajo para el resto de los comandos
+```
+WORKDIR /home/hamster
+```
+
+## Comando VOLUME
+Define un punto de montaje para un volumen de docker
+
+```
+VOLUME ["/data"]
+VOLUME /data
+```
