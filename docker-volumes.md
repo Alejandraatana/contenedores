@@ -27,12 +27,11 @@ $ sudo docker volume inspect mis-cachetes
 $ sudo docker volume rm mis-cachetes
 ```
 
-## Mount y volume
-
-Aunque comparten practicamente las mismas caracteristicas volume (`--volume -v`) puede ser depreciado pronto y substituido por mount completamente en el manejo de volumenes.
-
-## Mount Sintaxis
+## Volume Sintaxis
 
 ```
-$ sudo docker 
+$ sudo docker run --name torta-de-jamon -p 80:80 -d -v mis-cachetes:/usr/share/nginx/html nginx
+$ sudo docker inspect torta-de-jamon
+$ sudo docker stop torta-de-jamon
+$ sudo docker run -v mis-cachetes:/app busybox ls /app
 ```
