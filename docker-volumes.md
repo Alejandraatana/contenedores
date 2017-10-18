@@ -35,3 +35,11 @@ $ sudo docker inspect torta-de-jamon
 $ sudo docker stop torta-de-jamon
 $ sudo docker run -v mis-cachetes:/app busybox ls /app
 ```
+## Uniendo todo :octocat:
+
+```
+$ docker run --name mi-mysql -v mis-cachetes2:/var/lib/mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=Hamster -d mysql
+```
+
+
+
