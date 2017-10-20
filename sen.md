@@ -1,92 +1,80 @@
+# Sen
+Sen es una interfaz de usuario para manejar contendores desde linea de comandos
 
-# 
-
-# Keybindings
-
-Since I am heavy `vim` user, these keybindings are trying to stay close to vim.
-
-
-## Global
-
-```
-/         search (provide empty query to disable searching)
-n         next search occurrence
-N         previous search occurrence
-f4        display only lines matching provided query (provide empty query to clear filtering)
-f5        open a tree view of all images (`docker images --tree` equivalent)
-ctrl o    navigate to next buffer
-ctrl i    navigate to previous buffer
-x         remove buffer
-q         remove buffer, quit if no buffer is left
-ctrl l    redraw user interface
-h, ?      show help
-:         open command prompt
+## Instalacion
+```bash
+$ sudo dnf install sen
 ```
 
-## Movement
+# Atajos de Teclado
+
+El autor de `sen` se declara Fan de `Vim` por lo que  trata que sus atajos sean parecidos... No lo son tanto.
+
+## Globales
 
 ```
-gg, home  go to first item
-G, end    go to last item
-j         go one line down
-k         go one line up
+/         busqueda
+n         siguiente ocurrencia
+N         Ocurrencia previa
+f4        Muestra solo las lineas con la ocurrencia de la busqueda
+f5        Abre un arbol de imagenes
+ctrl o    Va al siguiente buffer o pagina
+ctrl i    Regresa al buffer o pagin anterior
+x         Borra buffer
+q         borra buffer, sale so no hay mas
+ctrl l    redibuja la interfaz
+h, ?      muestra ayuda
+:         Inicia el promt de comandos
+```
+
+## Movimiento
+
+```
+gg, home  va al primer item
+G, end    va al ultimo item
+j         Abajo
+k         arriba
 pg up
-ctrl u    go 10 lines up
+ctrl u    va 10 lineas arriba
 pg down
-ctrl d    go 10 lines down
+ctrl d    va 10 lineas abajo
 ```
 
 ## Listing
 
 ```
-@         refresh listing
-f4        filtering, for more info run `help filter` in sen
+@         refresca listado
+f4        filtrado
 ```
 
-## Image commands in listing
+## Comandos de Imagen
 
 ```
-i         inspect image
-d         remove image (irreversible!)
-enter     display detailed info about image (when layer is focused)
+i         inspecciona imagen
+d         borra imagen (irreversible!)
+enter     Muestra informacion detallada
 ```
 
-## Container commands in listing
+## Comandos de contendor
 
 ```
-i         inspect container
-l         display logs of container
-f         follow logs of container
-d         remove container (irreversible!)
-t         stop container
-s         start container
-r         restart container
-p         pause container
-u         unpause container
-b         open container's mapped ports in a web-browser
-X         kill container
-!         toggle realtime updates of the interface (this is useful when you are removing multiple
-          objects and don't want the listing change during that so you accidentally remove something)
+i         inspecciona contenedor
+l         muestra logs del contendor
+f         sigue los logs del container
+d         borra contenedor (irreversible!)
+t         detiene contenedor
+s         inicia contendor
+r         reinicia contenedor
+p         pausa contenedor
+u         continua contenedor
+b         Abre puertos mapeados en el navegador 
+X         Mata contenedor
+!         Habilita/deshabilita vista dinamica
 ```
 
-## Tree buffer
+## Imagen/contendor info buffer
 
 ```
-enter  display detailed info about image (opens image info buffer)
+enter     Muestra informacion detallada
+i         inspecciona imagen o contenedor
 ```
-
-## Image info buffer
-
-```
-enter     display detailed info about image (when an image is focused)
-i         inspect image or container, whatever is focused
-```
-
-
-## Container info buffer
-
-```
-enter     display detailed info about image (when image of the container is focued)
-i         inspect image (when image of the container is focued)
-```
-
