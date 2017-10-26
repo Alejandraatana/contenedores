@@ -17,7 +17,7 @@ parte de una infrestructura __seria__ de muchas empresas.
 
 ## Terminologia
 
-* PODS: Esi pensamos en una kubernetes como un rompecabezas el pod es una pieza sencilla del el y
+* PODS: Si pensamos en una kubernetes como un rompecabezas el pod es una pieza sencilla del el y
 por lo mismo son la pieza mas pequeña que se peude desplegar (poner en pruebas o produccion), cada pod tiene su propio
 espacio de nombres y todos los contendores dentro del pod comparten:
 
@@ -28,3 +28,5 @@ espacio de nombres y todos los contendores dentro del pod comparten:
   * Pueden compartir volumenes.
   
 El pod sirve par mantener y administrar contenderes que se requieren/ayudan unos otros como por ejemplo una aplicacion con su base de datos, nota que no necesariamente tienen que estar en el mismo equipo fisico y compartir el pod, es mas, es comun que esten separados.
+
+* Labels: Atiquetas
