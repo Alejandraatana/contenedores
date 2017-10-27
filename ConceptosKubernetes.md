@@ -33,9 +33,9 @@ El pod sirve par mantener y administrar contenderes que se requieren/ayudan unos
 que se incorporan a objetos en kubernetes (por ejemplo un pod). Esto permite especificar atributos unicos a
 objetos que ademas tienen sentido para las personas (por ejemplo el nombre del contendor contra su id).
 por ejemplo podemos identificar:
- * Versiones de Software: Alpha, beta, estable, etc.
- * Entornos: Desarrollo y produccion.
- * Tier: Front-end o Back-end.
+  * Versiones de Software: Alpha, beta, estable, etc.
+  * Entornos: Desarrollo y produccion.
+  * Tier: Front-end o Back-end.
 Las etiquetas son muy flexibles y se peuden aplicar para nombrar cualquier cosa, no solo las anteriores.
 
  * __Replica sets (Conjuntos de replica)__: Se encargan de la planificacion y replanificacion automatica
