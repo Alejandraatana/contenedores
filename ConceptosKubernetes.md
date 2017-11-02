@@ -54,7 +54,7 @@ Las etiquetas son muy flexibles y se peuden aplicar para nombrar cualquier cosa,
  Adicionalmente y para usar maquinas virtuales mas adelante:
  ```bash
  $ sudo dnf install libvirt-daemon-kvm kvm
- $ sudo -a -G libvirt $(whoami)
+ $ sudo usermod -a -G libvirt $(whoami)
  $ sudo newgrp libvirt
  ```
  
