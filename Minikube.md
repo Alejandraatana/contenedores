@@ -9,7 +9,7 @@ curl -L https://github.com/docker/machine/releases/download/v0.13.0/docker-machi
     chmod +x /tmp/docker-machine &&
     sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
 ```
-## Instalacion driver kvm para docker machine
+## Instalacion driver kvm para docker machine :hamster:
 ```
   curl -L https://github.com/dhiltgen/docker-machine-kvm/releases/download/v0.10.0/docker-machine-driver-kvm-centos7 > /tmp/docker-machine-driver-kvm &&  chmod +x /tmp/docker-machine-driver-kvm && sudo mv /tmp/docker-machine-driver-kvm /usr/local/bin/docker-machine-driver-kvm
 ```
@@ -21,7 +21,14 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/miniku
 
 ## Ejecutar Minikube
 ```bash
-minikube start --vm-driver=kvm
-kubectl config use-context minikube
-kubectl cluster-info
+$ minikube start --vm-driver=kvm
+$ kubectl config use-context minikube
+$ kubectl cluster-info
+```
+### Ejercicio: Crear una aplicacion dentro de un contendor docker
+> Puedes usar alguna trabajada previemente :trollface:
+
+## Correr aplicacion en cluster
+```bash
+$ kubectl run hamster --image=nginx --port 80
 ```
