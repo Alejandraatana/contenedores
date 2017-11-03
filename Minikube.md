@@ -40,3 +40,20 @@ $ kubectl config view
 $ kubectl expose deployment hamster --type=LoadBalancer
 $ minikube service hamster
 ```
+## Integracion continua...
+Realiza cambios a tu imagen y reetiquetala con v2 al final
+```
+$ sudo docker build -t hamster:v2 .
+$ kubectl set image deployment/hamster hamster=hamster:v2
+$ minikube service hamster
+```
+## Miscelaneo (entrar al pod y revisar)
+```bash
+$ kubectl exec -it <nombre del pod> bash
+```
+## limpiando todo
+```bash
+$ kubectl delete service hamster
+$ kubectl delete deployment hamster
+$ minikube stop
+```
