@@ -11,3 +11,4 @@ Red Hat OpenShift Container Platform (OCP) incluye las siguientes caracteristica
 * Manejo de ciclo de vida de las aplicaciones.
 * Auto servicio en demanda
 
+![OpenShift Stack](images/OpenShift_Software_Stack.png)
